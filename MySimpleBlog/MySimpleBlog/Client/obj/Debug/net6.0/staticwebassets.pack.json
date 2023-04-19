@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\css\\BlogCardsStyles.css",
+      "PackagePath": "staticwebassets\\css\\BlogCardsStyles.css"
+    },
+    {
       "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -71,6 +75,50 @@
     {
       "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\fonts\\montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Regular.ttf"
     },
     {
       "Id": "C:\\My Projects\\MySimpleBlog\\MySimpleBlog\\MySimpleBlog\\Client\\wwwroot\\icon-192.png",

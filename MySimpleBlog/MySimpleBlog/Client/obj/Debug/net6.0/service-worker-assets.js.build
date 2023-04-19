@@ -1,8 +1,12 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-lDAEEaul32OkTANWkZgjgs4sFCsMdLsR5NJxrjVcXdo=",
+      "hash": "sha256-aDjAUodUQj9uaCREFL\/290NBN7nEAgaxYFkkp+fdRus=",
       "url": "css\/app.css"
+    },
+    {
+      "hash": "sha256-7JmxZldBVJNuVyVwj+WWYXp5\/GNItdXst+c2HFw1SB8=",
+      "url": "css\/BlogCardsStyles.css"
     },
     {
       "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
@@ -53,6 +57,50 @@
       "url": "favicon.ico"
     },
     {
+      "hash": "sha256-H9TIgrJ3sXM\/J7545Z8jGN93ERPPw5gfTErRsocjiIA=",
+      "url": "fonts\/font-awesome-4.7.0\/css\/font-awesome.min.css"
+    },
+    {
+      "hash": "sha256-e\/yrbbmdXPvxcFygU23ceFhUMsxfpBu9etDwCQM7KXk=",
+      "url": "fonts\/font-awesome-4.7.0\/fonts\/fontawesome-webfont3e6e.eot"
+    },
+    {
+      "hash": "sha256-rWFXkmwWIrpOHQPUePFUE2hSS\/xG9R5C\/g2UX37zI+Q=",
+      "url": "fonts\/font-awesome-4.7.0\/fonts\/fontawesome-webfont3e6e.svg"
+    },
+    {
+      "hash": "sha256-qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=",
+      "url": "fonts\/font-awesome-4.7.0\/fonts\/fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "hash": "sha256-ugxZ3rVFD1y0Gz+TYJ7i0NmVQVh33foiPoqKdTNHTwc=",
+      "url": "fonts\/font-awesome-4.7.0\/fonts\/fontawesome-webfont3e6e.woff"
+    },
+    {
+      "hash": "sha256-Kt78vAQefRj88tQXh53FoJmXqmTWdbejxLbOM9oT8\/4=",
+      "url": "fonts\/font-awesome-4.7.0\/fonts\/fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "hash": "sha256-e\/yrbbmdXPvxcFygU23ceFhUMsxfpBu9etDwCQM7KXk=",
+      "url": "fonts\/font-awesome-4.7.0\/fonts\/fontawesome-webfontd41d.eot"
+    },
+    {
+      "hash": "sha256-McqPxLsZARiFGVnygpCa9Kj254K2nc++AAlP\/AEIeLM=",
+      "url": "fonts\/Linearicons-Free-v1.0.0\/icon-font.min.css"
+    },
+    {
+      "hash": "sha256-xMjLVypaLEPXizcB9LI0loTmyk0VV+Rpr2BlseCZwmw=",
+      "url": "fonts\/montserrat\/Montserrat-Bold.ttf"
+    },
+    {
+      "hash": "sha256-JXr5oF3mNx4fezRdAqk69cLgq5uSJEGKRRibjMhgSc0=",
+      "url": "fonts\/montserrat\/Montserrat-ExtraBold.ttf"
+    },
+    {
+      "hash": "sha256-gevDkWtSQAe3VtkdnfE8dnPsQBFh8srRYWYtCNzxzHI=",
+      "url": "fonts\/montserrat\/Montserrat-Regular.ttf"
+    },
+    {
       "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
       "url": "icon-192.png"
     },
@@ -61,7 +109,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-7oWYbDcmWpDNKMNYEiA\/z4XZAaX5VIc2DQfZP4EjZ+c=",
+      "hash": "sha256-LZjcgncZXzOGtfanuE9OosHeh52gttTDzPQ7X6VXILA=",
       "url": "index.html"
     },
     {
@@ -1785,5 +1833,5 @@
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "62zIxZqK"
+  "version": "k0ukcg5h"
 };
