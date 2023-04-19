@@ -266,15 +266,15 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "MySimpleBlog.Shared.dll": "sha256-Cf44vQMnURWDsawITGKIpOq1lfYCcY0HXT8zgQ3LFfg=",
-      "MySimpleBlog.Client.dll": "sha256-XE66RBKxvFvBkCul0BJ+SHCQogbOQANiDPXqqBiq4yc="
+      "MySimpleBlog.Shared.dll": "sha256-tnm8u8kfS5xKcKTF4YoWGU7FMBy1xo\/zOJ0E8DTv6iM=",
+      "MySimpleBlog.Client.dll": "sha256-XhYobLVCtOdaC84bJZXIjap\/DVODK1jo5GiMx2GlYO0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "MySimpleBlog.Shared.pdb": "sha256-dRH71+AWNybmDb0bH5Na3RVnF7pUoPzTqRjhU7lYMMs=",
-      "MySimpleBlog.Client.pdb": "sha256-rfXBaC1M444gv2VRZijcwysHlsF2Ot5D9hqUL5Ri+60="
+      "MySimpleBlog.Shared.pdb": "sha256-LuinLZ5cJrDjzJT8tGIDEVGzosoyareUPgmA5dCSXrw=",
+      "MySimpleBlog.Client.pdb": "sha256-yVO\/qRsg4l1lEFHZauwgN4URmq4pkfZzCL1Q+V1FTzs="
     },
     "runtime": {
       "dotnet.6.0.16.xhz9tjmibb.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",

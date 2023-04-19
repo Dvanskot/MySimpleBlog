@@ -1,9 +1,159 @@
 ﻿@page "/"
+@page "/{id}"
+@using MySimpleBlog.Shared
+@using MySimpleBlog.Shared.Core.Serives
+@using MySimpleBlog.Shared.Core.Interfaces
+@using MySimpleBlog.Shared.Models
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject INewsArticleService _newsArticleService
 
-<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="row">
 
-Welcome to your new app.
+	<article class="light">
+		<div class="container py-2">
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+			@if(Id  == null)
+			{
+				<PageTitle>My Simple Blog - Articles</PageTitle>
+				<div class="h1 text-center text-dark" id="pageHeaderTitle">Most Recent Articles</div>
+
+				@if (articles == null)
+				{
+					<p class="text"><em>Sorry, no records found.</em></p>
+				}
+				else
+				{
+					@foreach (var article in articles)
+					{
+						//Displaying all selected Articles
+						<article class="postcard light blue">
+							<a class="postcard__img_link" href="#">
+								<img class="postcard__img" src="@article.ImageName" alt="Image Title" />
+							</a>
+							<div class="postcard__text t-dark">
+								<h1 class="postcard__title green"><a href="#">@article.Title</a></h1>
+								<div class="postcard__subtitle small">
+									<time>
+										<i class="oi oi-person mr-2"></i> @article.Author
+									</time>
+								</div>
+								<div class="postcard__subtitle small">
+									<time>
+										<i class="oi oi-clock mr-2"></i> @article.DateCreated.ToString("dd MMM yyyy HH:ss tt")
+									</time>
+								</div>
+								<div class="postcard__bar"></div>
+								<div class="postcard__preview-txt">
+									@if (@article.Content.Length > 300)
+									{
+										@article.Content.Substring(0,300)
+
+										<em>...</em>
+
+									}
+									else
+									{
+										@article.Content
+									}
+								</div>
+								<ul class="postcard__tagbox">
+									<button class="btn btn-outline-secondary" @onclick="(() => ShowArticle(article.Id.ToString()))"><i class="oi oi-eye"></i> Read more...</button>
+								</ul>
+							</div>
+						</article>
+					}
+				}
+			}
+			else
+			{
+
+				//Displaying single selected Article
+				@if (article != null)
+				{
+
+					<PageTitle>@article.Title</PageTitle>
+					<div class="h1 text-center text-dark" id="pageHeaderTitle">@article.Title</div>
+					<article class="postcard light blue">
+						<a class="postcard__img_link" href="#">
+							<img class="postcard__img" src="@article.ImageName" alt="Image Title" />
+						</a>
+						<div class="postcard__text t-dark">
+							<h1 class="postcard__title green"><a href="#">@article.Title</a></h1>
+							<div class="postcard__subtitle small">
+								<time>
+									<i class="oi oi-person mr-2"></i> @article.Author
+								</time>
+							</div>
+							<div class="postcard__subtitle small">
+								<time>
+									<i class="oi oi-clock mr-2"></i> @article.DateCreated.ToString("dd MMM yyyy HH:ss tt")
+								</time>
+							</div>
+							<div class="postcard__bar"></div>
+							<div class="postcard__preview-txt">
+								@article.Content
+							</div>
+							<ul class="postcard__tagbox">
+								<button class="btn btn-outline-danger" @onclick="(() => ShowPreviousPage())"><i class="oi oi-caret-left"></i> Return to articles</button>
+							</ul>
+						</div>
+					</article>
+				}
+			}
+			
+			
+		</div>
+	</article>
+
+</div>
+
+
+
+
+@code {
+	[Parameter]
+	public string? Id { get; set; }
+
+	private NewsArticle article = null;
+
+    private IEnumerable<NewsArticle>? articles;
+
+	//Getting all Articles from the API service on Page Load
+
+    protected override async Task OnInitializedAsync()
+    {
+
+		await base.OnInitializedAsync();
+		
+
+    }
+
+	protected override async Task OnParametersSetAsync()
+	{
+		if (Id == null)
+		{
+			articles = await _newsArticleService.GetAllAsync();
+		}
+		else
+		{
+			//Get selected Article
+			article = await _newsArticleService.GetAsync(Convert.ToInt32(Id));
+		}
+	}
+
+	//Returning to all articles
+
+	void ShowPreviousPage()
+	{
+		NavigationManager.NavigateTo("/");
+	}
+
+	//Navidating to a single selected Article
+
+	void ShowArticle(string id)
+	{
+		NavigationManager.NavigateTo($"/{id}");
+	}
+}

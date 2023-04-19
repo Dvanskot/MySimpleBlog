@@ -1817,11 +1817,11 @@
       "url": "_framework\/MySimpleBlog.Shared.pdb"
     },
     {
-      "hash": "sha256-RRemi9gD2P3BDcnfY0MhwyWeYVuxN6o3oYvJkMkDK6Y=",
+      "hash": "sha256-XE66RBKxvFvBkCul0BJ+SHCQogbOQANiDPXqqBiq4yc=",
       "url": "_framework\/MySimpleBlog.Client.dll"
     },
     {
-      "hash": "sha256-nQT6VN4AZFqSUBZJBbQYHGUARQCHnGx5kBCno2bkQMc=",
+      "hash": "sha256-rfXBaC1M444gv2VRZijcwysHlsF2Ot5D9hqUL5Ri+60=",
       "url": "_framework\/MySimpleBlog.Client.pdb"
     },
     {
@@ -1829,9 +1829,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-QCLAGZ9DBklN\/Y5+2awa4VsV9ponStLIj9suux4qwbo=",
+      "hash": "sha256-MnBXyaeg3k1WfHsCDdWIp3XQb\/JuphmOlkkiPYDqLgw=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "k0ukcg5h"
+  "version": "jHAL4SDH"
 };
