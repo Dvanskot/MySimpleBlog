@@ -21,10 +21,24 @@
 				
 				<div class="postcard__text t-dark">
 					
-                    <EditForm Model="contact" OnValidSubmit="HandleSubmit">
-
+                    <EditForm Model="contact" OnValidSubmit=@HandleSubmit OnInvalidSubmit=@HanleInvalidFormSubmit>
+                        <DataAnnotationsValidator />
                         <div class="row">
-                            
+                            @if (LastSubmitResult != null)
+                            {
+                                @if (LastSubmitResult.Equals("success"))
+                                {
+                                    <div class="alert alert-success" role="alert">
+                                        This is a success alert—check it out!
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="alert alert-danger" role="alert">
+                                        Invalid data provided, kindly make sure that all fields are completed.
+                                    </div>
+                                }
+                            }
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label asp-for="name">Name</label>
@@ -82,15 +96,26 @@
     [Parameter]
     public string? Id { get; set; }
 
-    BlogContact contact = new BlogContact { };
+    BlogContact contact = new BlogContact();
+
+    string LastSubmitResult;
 
     protected override async Task OnInitializedAsync()
     {
       
     }
 
-	async Task HandleSubmit()
+    async Task HandleSubmit(EditContext editContext)
 	{
-		
+        bool formIsValid = editContext.Validate();
+        LastSubmitResult =
+          formIsValid
+          ? "success"
+          : "failure";
+	}
+
+    async Task HanleInvalidFormSubmit(EditContext editContext)
+	{
+        LastSubmitResult = "Invalid data was submitted";
 	}
 }
