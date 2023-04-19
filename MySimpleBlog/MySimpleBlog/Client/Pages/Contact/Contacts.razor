@@ -1,0 +1,97 @@
+﻿@using MySimpleBlog.Shared
+@using MySimpleBlog.Shared.Models
+@using MySimpleBlog.Shared.Core.Serives
+@using MySimpleBlog.Shared.Core.Interfaces
+@using MySimpleBlog.Client.Components
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject INewsArticleService _newsArticleService
+@page "/contacts"
+
+<PageTitle>Contuct Us</PageTitle>
+
+
+<div class="row">
+
+	<article class="light">
+		<div class="container py-2">
+
+			<div class="h1 text-center text-dark" id="pageHeaderTitle">Contact us</div>
+
+			<article class="postcard light blue">
+				
+				<div class="postcard__text t-dark">
+					
+                    <EditForm Model="article" OnSubmit="HandleSubmit">
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="name">Name</label>
+                                    <InputText id="name" @bind-Value="article.Name" class="form-control"></InputText>
+                                    <span asp-validation-for="name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="email">Email</label>
+                                    <InputText id="email" @bind-Value="article.Email" class="form-control"></InputText>
+                                    <span asp-validation-for="email" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="contactNumber">Contact Number</label>
+                                    <InputText id="contactNumber" @bind-Value="article.ContactNumber" class="form-control"></InputText>
+                                    <span asp-validation-for="contactNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="message">Message</label>
+                                    <InputText id="message" @bind-Value="article.Message" class="form-control"></InputText>
+                                    <span asp-validation-for="message" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-primary p-2 m-r-4" style="margin-top:30px;">Send Message</button>
+                                    <a href="/" class="btn btn-outline-warning p-2 m-r-4" style="margin-top:30px;">Cancel</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </EditForm>
+				</div>
+			</article>
+			
+
+
+		</div>
+	</article>
+
+</div>
+
+
+
+
+@code {
+
+    [Parameter]
+    public string? Id { get; set; }
+
+	private BlogContact article = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+      
+    }
+
+	async Task HandleSubmit()
+	{
+		
+	}
+}
