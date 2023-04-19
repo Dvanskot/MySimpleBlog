@@ -11,6 +11,6 @@ namespace MySimpleBlog.Shared.Core.Interfaces
     {
         Task<BlogContact> GetAsync(int id);
         Task<IEnumerable<BlogContact>> GetAllAsync();
-        Task<BlogContact> PostAsync(BlogContact blogContact);
+        Task<string> PostAsync(BlogContact blogContact);
     }
 }

@@ -29,7 +29,7 @@
                                 @if (LastSubmitResult.Equals("success"))
                                 {
                                     <div class="alert alert-success" role="alert">
-                                        This is a success alert—check it out!
+                                        @SubmitResponse
                                     </div>
                                 }
                                 else
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-outline-primary p-2 m-r-4" style="margin-top:30px;">Send Message</button>
+                                    <button type="submit" class="btn btn-outline-secondary p-2 m-r-4" style="margin-top:30px;">Send Message</button>
                                     <a href="/" class="btn btn-outline-warning p-2 m-r-4" style="margin-top:30px;">Cancel</a>
                                 </div>
                             </div>
@@ -99,6 +99,7 @@
     BlogContact contact = new BlogContact();
 
     string LastSubmitResult;
+    string SubmitResponse;
 
     protected override async Task OnInitializedAsync()
     {
@@ -107,11 +108,30 @@
 
     async Task HandleSubmit(EditContext editContext)
 	{
+
         bool formIsValid = editContext.Validate();
         LastSubmitResult =
           formIsValid
           ? "success"
           : "failure";
+
+        //Checking if sublitted data is valid
+        if (formIsValid)
+        {
+            //Saving message to the database via API
+            var response = await _contactService.PostAsync(contact);
+
+            //Getting response and displaying appropriate messages
+            if (response.Equals("True"))
+            {
+                SubmitResponse = "Message sent succesfully!";
+                contact = new BlogContact();
+            }
+            else
+            {
+                SubmitResponse = "Could not send message, try again later.";
+            }
+        }
 	}
 
     async Task HanleInvalidFormSubmit(EditContext editContext)

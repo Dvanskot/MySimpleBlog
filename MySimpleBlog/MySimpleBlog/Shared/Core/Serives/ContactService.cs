@@ -32,9 +32,10 @@ namespace MySimpleBlog.Shared.Core.Serives
         }
 
         //Saving Blog Contact Message
-        public async Task<BlogContact> PostAsync(BlogContact blogContact) 
+        public async Task<string> PostAsync(BlogContact blogContact) 
         {
-            return await _httpClient.GetFromJsonAsync<BlogContact>($"api/BlogContacts/{blogContact}");
+            var response = await _httpClient.PostAsJsonAsync("api/BlogContacts", blogContact);
+            return response.IsSuccessStatusCode.ToString();
         }
     }
 }
