@@ -1,0 +1,14 @@
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\bin\Debug\net6.0\MySimpleBlog.Shared.deps.json
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\bin\Debug\net6.0\MySimpleBlog.Shared.runtimeconfig.json
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\bin\Debug\net6.0\MySimpleBlog.Shared.dll
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\bin\Debug\net6.0\MySimpleBlog.Shared.pdb
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.csproj.AssemblyReference.cache
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.AssemblyInfoInputs.cache
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.AssemblyInfo.cs
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.csproj.CoreCompileInputs.cache
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.dll
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\refint\MySimpleBlog.Shared.dll
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.pdb
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\MySimpleBlog.Shared.genruntimeconfig.cache
+C:\My Projects\MySimpleBlog\MySimpleBlog\MySimpleBlog\Shared\obj\Debug\net6.0\ref\MySimpleBlog.Shared.dll

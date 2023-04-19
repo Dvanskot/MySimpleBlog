@@ -1,0 +1,141 @@
+﻿@using MySimpleBlog.Shared
+@using MySimpleBlog.Shared.Models
+@using MySimpleBlog.Shared.Core.Serives
+@using MySimpleBlog.Shared.Core.Interfaces
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IContactService _contactService
+@page "/contacts"
+
+<PageTitle>Contuct Us</PageTitle>
+
+
+<div class="row">
+
+	<article class="light">
+		<div class="container py-2">
+
+			<div class="h1 text-center text-dark" id="pageHeaderTitle">Contact us</div>
+
+			<article class="postcard light blue">
+				
+				<div class="postcard__text t-dark">
+					
+                    <EditForm Model="contact" OnValidSubmit=@HandleSubmit OnInvalidSubmit=@HanleInvalidFormSubmit>
+                        <DataAnnotationsValidator />
+                        <div class="row">
+                            @if (LastSubmitResult != null)
+                            {
+                                @if (LastSubmitResult.Equals("success"))
+                                {
+                                    <div class="alert alert-success" role="alert">
+                                        @SubmitResponse
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="alert alert-danger" role="alert">
+                                        Invalid data provided, kindly make sure that all fields are completed.
+                                    </div>
+                                }
+                            }
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="name">Name</label>
+                                    <InputText id="name" @bind-Value="contact.Name" class="form-control"></InputText>
+                                    <span asp-validation-for="name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="email">Email</label>
+                                    <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
+                                    <span asp-validation-for="email" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="contactNumber">Contact Number</label>
+                                    <InputText id="contactNumber" @bind-Value="contact.ContactNumber" class="form-control"></InputText>
+                                    <span asp-validation-for="contactNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="message">Message</label>
+                                    <InputTextArea id="message" @bind-Value="contact.Message" class="form-control" rows="6"></InputTextArea>
+                                    <span asp-validation-for="message" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-secondary p-2 m-r-4" style="margin-top:30px;">Send Message</button>
+                                    <a href="/" class="btn btn-outline-warning p-2 m-r-4" style="margin-top:30px;">Cancel</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </EditForm>
+				</div>
+			</article>
+			
+
+
+		</div>
+	</article>
+
+</div>
+
+
+
+
+@code {
+
+    [Parameter]
+    public string? Id { get; set; }
+
+    BlogContact contact = new BlogContact();
+
+    string LastSubmitResult;
+    string SubmitResponse;
+
+    protected override async Task OnInitializedAsync()
+    {
+      
+    }
+
+    async Task HandleSubmit(EditContext editContext)
+	{
+
+        bool formIsValid = editContext.Validate();
+        LastSubmitResult =
+          formIsValid
+          ? "success"
+          : "failure";
+
+        //Checking if sublitted data is valid
+        if (formIsValid)
+        {
+            //Saving message to the database via API
+            var response = await _contactService.PostAsync(contact);
+
+            //Getting response and displaying appropriate messages
+            if (response.Equals("True"))
+            {
+                SubmitResponse = "Message sent succesfully!";
+                contact = new BlogContact();
+            }
+            else
+            {
+                SubmitResponse = "Could not send message, try again later.";
+            }
+        }
+	}
+
+    async Task HanleInvalidFormSubmit(EditContext editContext)
+	{
+        LastSubmitResult = "Invalid data was submitted";
+	}
+}
