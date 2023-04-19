@@ -3,6 +3,8 @@ Senior Developer Assessment (Simple Blog)
 
 ![Home Page](https://user-images.githubusercontent.com/6513732/233061974-18733c7a-cf5a-45cb-821d-9125931fcabe.png)
 
+Project Structure
+====================
 This is a simple blog web application developed using ASP.NET Blazor 
  - The application was built using moden development bes practices and it consist of three projects 
     1. MySimpleBlog.Client (Presentation/UI) - PWA (Progressive Web App)
