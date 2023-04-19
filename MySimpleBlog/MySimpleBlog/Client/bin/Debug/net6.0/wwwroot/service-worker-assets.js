@@ -117,7 +117,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-1ZSEVl89wtJ1KKkF3fpKa1c10delxNERg9kCT8ays1k=",
+      "hash": "sha256-5BgpCO3c29YP0IX1YqGE\/W1gMnnJwoMpUghjrA6MyjY=",
       "url": "MySimpleBlog.Client.styles.css"
     },
     {
@@ -1817,11 +1817,11 @@
       "url": "_framework\/MySimpleBlog.Shared.pdb"
     },
     {
-      "hash": "sha256-sc81BlBTYG4ZaF4QdQtVhDPJRpRFrn+yGDSBMM+KUeg=",
+      "hash": "sha256-JviCX7dm3kjcKA9IivTBGEsu92kPNjBPZqk+1RfVR3g=",
       "url": "_framework\/MySimpleBlog.Client.dll"
     },
     {
-      "hash": "sha256-lhTdxP9IS6zN29NET0NmeUeJ4AOEyG4oYzn\/Y5qVwtA=",
+      "hash": "sha256-wednzDpwdaCwVMk25ZuBhbvYin6dY9UAZHt42Q0cY08=",
       "url": "_framework\/MySimpleBlog.Client.pdb"
     },
     {
@@ -1829,9 +1829,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-DJCift66HlcfiKn0EjXy9fpuMN9SYcGkD0EWAe+wKbs=",
+      "hash": "sha256-nHMLviY4L2ksGf\/+JqRuSJtF\/RVmnPYh\/mVGPxSGey0=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "AIjjtSh6"
+  "version": "1N46SsAR"
 };

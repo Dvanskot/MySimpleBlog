@@ -29,7 +29,7 @@ main[b-pu1si608r6] {
 }
 
 
-@media (min-width: 641px) {
+@media (min-width: 400px) {
     .page[b-pu1si608r6] {
         flex-direction: row;
     }
@@ -45,6 +45,29 @@ main[b-pu1si608r6] {
         text-align: right;
         width: 0;
     }
+
+    .top-row[b-pu1si608r6], article[b-pu1si608r6] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+@media (min-width: 400px) {
+    .page[b-pu1si608r6] {
+        flex-direction: row;
+    }
+
+    .top-row[b-pu1si608r6] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+        .top-row.auth[b-pu1si608r6]  a:first-child {
+            flex: 1;
+            text-align: right;
+            width: 0;
+        }
 
     .top-row[b-pu1si608r6], article[b-pu1si608r6] {
         padding-left: 2rem !important;
